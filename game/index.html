@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vault Break — a top-down 2D heist game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <canvas id="game" width="960" height="600"></canvas>
+  <p id="status" aria-live="polite">Vault Break. Press Enter to start the heist.</p>
+  <div class="buttons">
+    <button id="btn-start" type="button">Start heist</button>
+    <button id="btn-pause" type="button">Pause</button>
+    <button id="btn-restart" type="button">Restart</button>
+    <button id="btn-sound" type="button">Sound on/off</button>
+  </div>
+  <p class="help">Move <b>WASD / arrows</b> · <b>Shift</b> sneak · <b>E</b> (hold) crack the vault / hack the panel · <b>Space</b> wait · <b>P</b> pause · <b>R</b> restart · <b>M</b> mute · click a tile to walk there, click the vault to crack it. Grab the loot, crack the vault, reach the yellow van before the clock runs out — and stay out of the amber cones.</p>
+</main>
+<script src="src/level.js"></script>
+<script src="src/engine.js"></script>
+<script src="src/render.js"></script>
+<script src="src/input.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
